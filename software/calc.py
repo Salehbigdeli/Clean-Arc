@@ -1,3 +1,6 @@
+from functools import reduce
+
+
 class Calc:
 
     def add(self, *args):
@@ -9,7 +12,4 @@ class Calc:
     def mul(self, *args):
         if not args:
             raise Exception('At least one input is required')
-        res = 1
-        for i in args:
-            res *= i
-        return res
+        return reduce(lambda x, y: x*y, args)
