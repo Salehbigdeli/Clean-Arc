@@ -21,3 +21,5 @@ def test_subtract_two_numbers():
     c = Calc()
     res = c.sub(6, 2)
     assert res == 4
+    res = c.sub(32, 16)
+    assert res == 16

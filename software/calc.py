@@ -4,4 +4,4 @@ class Calc:
         return sum(args)
 
     def sub(self, a, b):
-        return 4
+        return a - b
