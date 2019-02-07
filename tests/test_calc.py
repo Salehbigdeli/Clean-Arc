@@ -11,3 +11,8 @@ def test_adding_multiple_numbers():
     c = Calc()
     res = c.add(1, 2, 3)
     assert res == 6
+
+def test_add_many_nums():
+    c = Calc()
+    res = c.add(*range(100))
+    assert res == 4950
