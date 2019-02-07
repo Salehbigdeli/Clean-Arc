@@ -23,3 +23,8 @@ def test_subtract_two_numbers():
     assert res == 4
     res = c.sub(32, 16)
     assert res == 16
+
+def test_multiply_two_numbers():
+    c = Calc()
+    res = c.mul(3, 7)
+    assert res == 21
