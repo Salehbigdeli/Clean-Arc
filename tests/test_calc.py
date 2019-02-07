@@ -28,3 +28,8 @@ def test_multiply_two_numbers():
     c = Calc()
     res = c.mul(3, 7)
     assert res == 21
+
+def test_multiply_many_numbers():
+    c = Calc()
+    res = c.mul(4, 5, 2)
+    assert res == 40
