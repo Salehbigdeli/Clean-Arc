@@ -42,3 +42,8 @@ def test_divide_two_numbers():
     c = Calc()
     res = c.div(3, 4)
     assert res == .75
+
+def test_divide_by_zero():
+    c = Calc()
+    res = c.div(5, 0)
+    assert res == 'inf'
