@@ -7,6 +7,8 @@ class Calc:
         return a - b
 
     def mul(self, *args):
+        if not args:
+            raise Exception('At least one input is required')
         res = 1
         for i in args:
             res *= i

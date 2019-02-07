@@ -16,6 +16,8 @@ def test_add_many_nums():
     c = Calc()
     res = c.add(*range(100))
     assert res == 4950
+    res = c.add()
+    assert res == 0
 
 def test_subtract_two_numbers():
     c = Calc()
@@ -33,3 +35,5 @@ def test_multiply_many_numbers():
     c = Calc()
     res = c.mul(4, 5, 2)
     assert res == 40
+    with pytest.raises(Exception):
+        res = c.mul()
