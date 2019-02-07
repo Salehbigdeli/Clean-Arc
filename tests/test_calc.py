@@ -37,3 +37,8 @@ def test_multiply_many_numbers():
     assert res == 40
     with pytest.raises(Exception):
         res = c.mul()
+
+def test_divide_two_numbers():
+    c = Calc()
+    res = c.div(3, 4)
+    assert res == .75

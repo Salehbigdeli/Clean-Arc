@@ -13,3 +13,6 @@ class Calc:
         if not args:
             raise Exception('At least one input is required')
         return reduce(lambda x, y: x*y, args)
+    
+    def div(self, a, b):
+        return a/b
