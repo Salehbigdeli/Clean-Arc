@@ -47,3 +47,10 @@ def test_divide_by_zero():
     c = Calc()
     res = c.div(5, 0)
     assert res == 'inf'
+
+def test_average_of_list():
+    c = Calc()
+    res = c.avg([1, 2, 3])
+    assert res == 2
+    res = c.avg([4, 7, 13])
+    assert res == 8

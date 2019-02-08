@@ -18,3 +18,6 @@ class Calc:
         if b == 0:
             return 'inf'
         return a/b
+
+    def avg(self, l):
+        return sum(l)/len(l)
